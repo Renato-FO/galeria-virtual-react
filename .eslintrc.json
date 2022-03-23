@@ -1,22 +1,29 @@
 {
-  "extends": ["next/core-web-vitals", "next", "prettier"],
-  "rules": {
-    "arraysInObjects": false,
-    "object-curly-spacing": ["error", "always", { "objectsInObjects": false }],
-    "quotes": ["error"],
-    "vue/comment-directive": 0,
-    "vue/attribute-hyphenation": 0,
-    "vue/no-setup-props-destructure": "warn",
-    "vue/no-dupe-keys": 0,
-    "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-empty-function": "off",
-    "simple-import-sort/exports": "warn",
-    "simple-import-sort/imports": "warn",
-    "prettier/prettier": [
-      "warn",
-      {
-        "endOfLine": "auto"
-      }
-    ]
-  }
+ "extends": [
+  "next/core-web-vitals",
+  "next",
+  "prettier",
+  "plugin:@typescript-eslint/recommended",
+  "prettier"
+ ],
+
+ "rules": {
+  "arraysInObjects": false,
+  "object-curly-spacing": ["error", "always", { "objectsInObjects": false }],
+  "quotes": ["error"],
+  "vue/comment-directive": 0,
+  "vue/attribute-hyphenation": 0,
+  "vue/no-setup-props-destructure": "warn",
+  "vue/no-dupe-keys": 0,
+  "@typescript-eslint/no-explicit-any": "off",
+  "@typescript-eslint/no-empty-function": "off",
+  "simple-import-sort/exports": "warn",
+  "simple-import-sort/imports": "warn",
+  "prettier/prettier": [
+   "warn",
+   {
+    "endOfLine": "auto"
+   }
+  ]
+ }
 }
